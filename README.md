@@ -1,35 +1,47 @@
-Descrição Geral
+Projeto Interativo em Three.js: Personagem com Arco e Flechas 🎯
 
-  Este projeto utiliza a biblioteca Three.js para renderizar uma cena tridimensional interativa. O ambiente inclui um personagem animado, um arco, flechas e elementos adicionais como o solo texturizado e um sistema de iluminação. O utilizador pode controlar diferentes aspetos da cena através de comandos do teclado e interagir dinamicamente com os objetos.
+Este projeto é uma demonstração de uma cena 3D interativa desenvolvida com a biblioteca Three.js. Inclui um personagem que utiliza um arco para disparar flechas, com animações dinâmicas, física e controlo personalizado.
 
-Controlo e Interação
-Câmeras Interativas:
+🚀 Funcionalidades Principais
 
-O projeto oferece duas perspetivas que podem ser alternadas pelo utilizador:
-Câmara Livre (pressionar tecla 1): Permite ao utilizador navegar pela cena através do rato, utilizando os OrbitControls.
-Câmara de Terceira Pessoa (pressionar tecla 2): Foca o personagem, acompanhando os seus movimentos.
-Sistema de Disparo com o Arco:
+🎥 Controlo de Câmeras
+			Câmara Livre (1): Navegue pela cena utilizando o rato com os OrbitControls.
+			Câmara de Terceira Pessoa (2): Acompanhe o personagem numa perspetiva próxima e fixa.
 
-Posição de Tiro (tecla F): Quando ativada, o personagem adota uma postura de disparo, ajustando dinamicamente as articulações (ombros, cotovelos) e a corda do arco.
-Disparo: Uma flecha é gerada e disparada, com cálculos físicos simulando gravidade e colisões com o solo.
-Reinício da Posição de Tiro (tecla A): Restabelece a posição inicial do personagem e prepara-o para um novo disparo.
+🏹 Sistema de Disparo
+Preparar Disparo (F): O personagem adota a posição de tiro, ajustando dinamicamente as articulações e o arco.
+Disparar Flecha: Dispara uma flecha com física realista (gravidade e colisão).
+Reiniciar Posição (A): Prepara o personagem para um novo disparo.
 
-Força do Disparo:
+⚙️ Personalização
+Força do Disparo: Ajuste a força da flecha utilizando o slider interativo na interface.
 
-Um slider interativo permite ao utilizador ajustar a força aplicada à flecha antes de disparar, influenciando a velocidade inicial e a trajetória.
-Animações e Física:
+🖼️ Visual e Animações
+Texturização Detalhada: O solo e o personagem possuem texturas realistas.
+Animações Dinâmicas: O arco, a flecha e o personagem interagem dinamicamente, simulando movimento e física.
+Iluminação: Luz ambiente e pontual criam profundidade e destaques visuais.
 
-O movimento do personagem e o comportamento do arco e da flecha são animados dinamicamente. A física do movimento da flecha inclui:
-Efeitos de gravidade.
+📂 Estrutura do Projeto
+HTML: Configuração básica da página, com elementos de interface e scripts importados.
+JavaScript:
+Configuração da cena, câmeras e renderizador.
+Definição do personagem, arco, flecha e suas animações.
+Implementação de física para o disparo e colisão.
+Texturas: Imagens para o solo, pele do personagem e materiais do arco.
 
-Colisões com o solo.
+🎮 Controles
 
-Feedback Visual:
 
-Mensagens na interface informam o utilizador sobre os comandos disponíveis e o estado do disparo (pronto para disparar novamente ou em recarga).
-Elementos Técnicos
+Ativar Câmara Livre: tecla -	1
 
-Texturização: O solo e o personagem utilizam texturas detalhadas para maior realismo.
-Controlo Dinâmico: Classes e métodos personalizáveis, como para a atualização da corda do arco e o movimento do personagem.
-Iluminação: Uma combinação de luz ambiente e luzes pontuais para criar profundidade e destacar os elementos.
 
+Ativar Câmara 3ª Pessoa: tecla -	2
+
+
+Preparar Disparo: tecla -	F
+
+
+Disparar Novamente: tecla -	A
+
+
+Ajustar Força do Disparo	Slider no ecrã
