@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ThreeJS - Materials</title>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to use the complete page */
+            margin: 0;
+            overflow: hidden;
+        }
+        .group {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 1rem;
+            padding: 1rem;
+            color: #dedede;
+            background: #0e0055;
+            border: #454545 10px solid;
+            border-radius: 10%;
+        }
+        .input-group{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 1rem;
+            padding: 1rem;
+            color: #dedede;
+            background: #0e0055;
+            border: #454545 10px solid;
+            border-radius: 10%;
+        }
+
+        .shootAgain{
+            display: none;
+        }
+        .shoot{
+            display: block;
+        }
+    </style>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="group">
+        <h3>Press 1 for Camera Free</h3>
+        <h3>Press 2 for Third Person Camera </h3>
+        <h3 class="shoot" >Press F to Shoot </h3>
+        <h3 class="shootAgain" >Press A to Shoot Again</h3>
+    </div>
+
+    <div class="input-group">
+        <p class="slidervalue">Strength:</p>
+        <input type="range" min="5" max="35" value="10" class="strength">
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
